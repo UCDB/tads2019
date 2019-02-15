@@ -1,0 +1,36 @@
+<html>
+    <script>
+
+        function soma(){
+        let n1 = parseFloat(document.getElementById("n1").value); 
+        
+        let n2= parseFloat(document.getElementById("n2").value);
+
+        let n3 = parseFloat(document.getElementById("n3").value); 
+
+            let media = (n1+n2+n3)/3;
+
+            if (media>=7){
+            alert("Aprovado");
+            }else if ( media >=5){
+                alert("recuperação");
+            }else{
+                alert("reprovado");
+            }
+        }
+
+    </script>
+
+    <body>
+      Nota 1
+        <Input type= "number" id="n1" value="">
+      Nota 2
+        <Input type= "number" id="n2" value=""> 
+      Nota 3 
+        <Input type= "number" id="n3" value="">
+        
+      <button type= "button" id="btn"
+   onclick="soma()"> Somar </button>
+          
+</body>      
+          
