@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            /*function aritmetica(f, v1, v2){  
+                console.log("Executando Funcao Aritmetica:" , f(v1,v2))  ; 
+            }*/
+
+            function aritmetica(f, arr){  
+                console.log("Executando Funcao Aritmetica:" , f(arr) ) ; 
+            }
+
+           
+
+            aritmetica (function (v){
+                let s =  0;
+                for (let i=0;i<v.length;i++){
+                    s = s + v[i];
+                }
+                return s;
+
+            },  [1, 2, 3, 4]  )
+
+
+
+
+
+        /*aritmetica( 
+                function (n1,n2) { 
+                        return n1+n2;
+                    } , 10, 20  
+            )
+
+           aritmetica (function (n1,n2){
+                    return (n1*n1) + (n2*n2)
+            },10,10)*/
+
+        </script>
+    </head>
+</html>
