@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+          
+            const potencia =  (base, exponent)=>{ //arrow function
+                let result = 1;
+                for (let count = 0; count < exponent; count++) {
+                    result *= base;
+                }
+                return result;
+            }
+
+           let v =  potencia(10,2)
+           console.log(v)
+
+
+           const quadrado = (x) => { return x* x;} //arrow function
+           console.log(quadrado(4));
+
+           const quadrado2 = x => x*x;  //arrow function
+           console.log(quadrado2(3));
+
+        </script>
+    </head>
+</html>

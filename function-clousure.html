@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+          
+           function wrapValue(n) {
+                let local = n;
+                //return function () { return local};
+                return ()=>local;
+            }
+
+            
+                    
+
+           let func = wrapValue(10);
+           let valor= func ();
+           console.log(valor)
+
+
+           console.log(wrapValue(20)())
+
+        </script>
+    </head>
+</html>
