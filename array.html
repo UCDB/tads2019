@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+    let frutas = ["Melancia","Banana"];
+   // console.log(frutas.length);
+    //console.log(frutas[length]);
+
+    console.log(frutas["length"]);
+    frutas.push("Pera");
+    
+    const imprimir = () =>{
+        for (let i=0;i<frutas["length"];i++){
+            console.log(frutas[i]);
+        }
+    }
+    imprimir();
+
+    console.log("-----POP----");
+    console.log(frutas.pop());
+    console.log("------------");
+    
+    imprimir()
+
+    console.log("-----POP----");
+    console.log(frutas.pop());
+    console.log("------------");
+
+    imprimir()
+
+
+        </script>
+    </head>
+</html>
