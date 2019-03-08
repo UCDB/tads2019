@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+          
+            let aula = {
+                prof:{nome:"Virmerson", sexo:"m"},
+                alunos:[{nome:"Jão", ra:1},{nome:"Zé",ra:2}],
+                dataInicio: new Date("Thu Mar 07 2019 19:46:00 GMT-0400"),
+                dataFim: new Date("Thu Mar 07 2019 20:56:00 GMT-0400"),
+                materia:"RAD1",
+                materia2: this.materia,
+                tempo:function(){
+                    let t = {
+                       
+                        minutos:  (this.dataFim -  this.dataInicio)/60000 ,  
+                        hora:  parseInt((this.dataFim -  this.dataInicio)/60000/60) + ":" + (this.dataFim -  this.dataInicio)/60000%60
+                    }
+                  return t;
+                },
+                imprimirDados:function(){
+                   let chaves= Object.keys(this);
+                   for (let i=0;i<chaves.length; i++){
+                        if (typeof this[chaves[i]] != 'function')
+                         console.log(this[chaves[i]]);
+                         
+                   }
+                }
+            }
+
+           /* console.log(aula.prof)
+            console.log(aula.alunos)
+            console.log(aula.dataInicio)
+            console.log(aula.dataFim)
+            console.log(aula.materia)
+            console.log(aula.tempo())
+            console.log(Object.keys(aula))*/
+
+            aula.imprimirDados()
+        </script>
+    </head>
+</html>
