@@ -1,0 +1,36 @@
+<script>
+
+    function filter(array, test) {
+        let passed = [];
+        for (let element of array) {
+            if (test(element)) {
+                passed.push(element);
+            }
+        }
+    return passed;
+    }
+    //Data Set
+    let alunos = [
+        {nome:'Vitor', dev:true, des:false},
+        {nome:'Daniel', dev:false, des:true},
+        {nome:'Diego', dev:false, des:true},
+        {nome:'MATHEUS Neves', dev:true, des:false},
+        {nome:'Jhonatan', dev:true, des:true},
+        {nome:'Matheus Luiz', dev:false, des:true}
+    ]
+    console.log(alunos);
+    //let designers = filter (alunos, function (e) { return e.des;} )
+    //let designers = filter (alunos,  (e) => { return e.des;} )
+   // let designers = filter (alunos,  (e) =>  e.des )
+    let designers = filter (alunos,  e =>  e.des )
+ 
+    console.log (designers)
+
+    let develpers = filter (alunos, function (e) { return e.dev;} )
+    console.log (develpers)
+
+    //let matheus = filter (alunos, function (e) { return e.nome.toUpperCase().indexOf('MATHEUS')!=-1;} )
+    let matheus = filter (alunos, e=> e.nome.toUpperCase().indexOf('MATHEUS')!=-1 )
+ 
+    console.log (matheus)
+</script>
