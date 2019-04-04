@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+          
+
+       
+        function dividir() {
+              console.log(this.notas.map(function (n) { return (n +1)/this.length }));
+            // console.log(this.notas.map( n =>  n /this.length ));
+        
+        }
+        let aluno = {notas: [0, 2, 3], length: 5};
+        dividir.call(aluno);
+        // → [0, 0.4, 0.6]
+
+           
+        </script>
+    </head>
+</html>

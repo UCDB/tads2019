@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+         //class
+            function Pessoa (tipo){
+                this.tipo=tipo;
+            }
+            Pessoa.prototype.imprimir= function(){
+                console.log(`${this.tipo}`)
+            }
+            let p1 =  new Pessoa("pj");
+            p1.imprimir();
+
+            let p2 =  new Pessoa("pf");
+            p2.imprimir();
+        </script>
+    </head>
+</html>

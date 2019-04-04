@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+          
+          
+           
+            function imprimir (texto){
+                console.log(`Imprimindo...'${texto}' de pessoa ${this.tipo}`)
+            }
+
+            let pessoa1 = {tipo:"fisica", imprimir};
+            let pessoa2 =  {tipo:"juridica", imprimir};
+            
+            pessoa1.imprimir("Eu sou pessoa 1");
+            pessoa2.imprimir("Eu sou pessoa 2");
+
+            imprimir.call(pessoa1, 'Eu sou a pessoa 1 novamente')
+            
+        </script>
+    </head>
+</html>
