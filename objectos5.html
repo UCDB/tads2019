@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            
+            let person = {tipo:'pf'};
+
+            function makePerson(tipo){
+                let p =  Object.create(person);
+                p.tipo=tipo;
+                return p;
+            }
+
+            let  pf1 = makePerson('pf');
+            console.log(pf1.tipo);
+
+
+        </script>
+    </head>
+</html>

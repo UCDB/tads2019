@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            
+            class Pessoa{
+
+               
+                    constructor(tipo){
+                        this.tipo = tipo;
+                    }
+                    imprimir(){
+                        console.log(`O tipo da pessoa é ${this.tipo}`);
+                    }
+            }
+
+           let pj1=  new Pessoa('PJ')
+           pj1.imprimir();
+
+
+            let pf =  new class{ imprimir(){console.log("Classe maluca;")}};
+
+            pf.imprimir();
+
+
+
+
+        </script>
+    </head>
+</html>
